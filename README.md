@@ -1,2 +1,3 @@
 ## EduTron egyéb dokumentumok
-[specifikáció](https://github.com/14F-F)
+
+[Specifikáció](https://github.com/14F-F)
