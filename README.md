@@ -1,1 +1,2 @@
-# Others
+## EduTron egyéb dokumentumok
+ specifikáció {}
