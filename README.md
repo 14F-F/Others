@@ -1,2 +1,2 @@
 ## EduTron egyéb dokumentumok
- specifikáció {}
+ specifikáció {https://youtube.com}
