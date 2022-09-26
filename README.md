@@ -1,2 +1,2 @@
 ## EduTron egyéb dokumentumok
- [specifikáció] https://youtube.com
+ [https://github.com/14F-F] (#specifikáció)
