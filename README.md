@@ -1,3 +1,3 @@
 ## EduTron egyéb dokumentumok
 
-[Specifikáció](https://docs.google.com/document/d/18RhEM5DprRCrGNU9kkxnE1-pvnY9GIlK/edit?usp=sharing&ouid=110769496257039280531&rtpof=true&sd=true)
+[Specifikáció](https://docs.google.com/document/d/e/2PACX-1vS_cbFpSYoE8fOP_Iu5CRsNGUU8nq98y6ptw5dSZc7SvemVHOcP1e3YQeM_MW860A/pub)
