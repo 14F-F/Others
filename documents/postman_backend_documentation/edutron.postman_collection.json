@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "487570ea-77a0-4bc2-9cd5-2c07e0718528",
+		"_postman_id": "82b695ae-ebdb-473b-8b6d-828bdf65a6bd",
 		"name": "edutron",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26267139"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -14,7 +13,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/getAll/user",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -28,6 +30,54 @@
 			"response": []
 		},
 		{
+			"name": "testByUser/:userId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/testByUser/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"testByUser",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testByCategory/:categoryId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/testByCategory/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"testByCategory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "test/:id",
 			"request": {
 				"method": "GET",
@@ -35,7 +85,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/test/2",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -49,6 +102,54 @@
 			"response": []
 		},
 		{
+			"name": "question/:testId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/question/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"question",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "answer/:questionId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/answer/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"answer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "category/:id",
 			"request": {
 				"method": "GET",
@@ -56,7 +157,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/category/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -70,34 +174,13 @@
 			"response": []
 		},
 		{
-			"name": "testdata/:testid",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "45.67.159.35:3000/api/edutron/testdata/2",
-					"host": [
-						"45.67.159.35"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"edutron",
-						"testdata",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "createTest",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Name\":\"bruh3\",\r\n    \"SolvingCode\":\"069585\",\r\n    \"CreatorID\":42\r\n}",
+					"raw": "{\r\n    \"Name\":\"teszt\",\r\n    \"SolvingCode\":\"069585\",\r\n    \"CreatorID\":42\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -107,7 +190,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/createTest/",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -115,6 +201,166 @@
 						"edutron",
 						"createTest",
 						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addTQID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/addTQID",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"addTQID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addQAID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/addQAID",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"addQAID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUTID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/addUTID",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"addUTID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUQID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/addUQID",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"addUQID"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addUAID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/addUAID",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"addUAID"
 					]
 				}
 			},
@@ -137,7 +383,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/createQuestion",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -166,7 +415,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/createAnswer",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -185,7 +437,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Name\": \"req.body.Ném\",\r\n    \"SolvingCode\": \"011111\"\r\n}",
+					"raw": "{\r\n    \"Name\": \"újnév\",\r\n    \"SolvingCode\": \"011111\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -195,13 +447,185 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/updateTest/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
 						"api",
 						"edutron",
 						"updateTest",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTQID/:TestID/:QuestionID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateTQID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateTQID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateQAID/:QuestionID/:AnswerID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateQAID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateQAID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUTID/:UserID/:TestID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateUTID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateUTID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUQID/:UserID/:QuestionID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateUQID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateUQID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUAID/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateUAID/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateUAID",
 						"1"
 					]
 				}
@@ -225,7 +649,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/updateQuestion/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -245,7 +672,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"AnswerText\":\"Ne\",\r\n    \"Correct\":0\r\n}",
+					"raw": "{\r\n    \"AnswerText\":\"Hamis\",\r\n    \"Correct\":0\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -255,7 +682,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/updateAnswer/2",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -276,13 +706,140 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/deleteTest/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
 						"api",
 						"edutron",
 						"deleteTest",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTQID/:TestID/:QuestionID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteTQID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteTQID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteQAID/:QuestionID/:AnswerID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteQAID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteQAID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUTID/:UserID/:TestID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteUTID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteUTID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUQID/:UserID/:QuestionID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteUQID/1/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteUQID",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUAID/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteUAID/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteUAID",
 						"1"
 					]
 				}
@@ -297,7 +854,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/deleteQuestion/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -318,7 +878,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/deleteAnswer/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
