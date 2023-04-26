@@ -1,0 +1,300 @@
+{
+	"info": {
+		"_postman_id": "4a6b8eb6-b987-4781-9f69-219bf9545f79",
+		"name": "edutron.admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll/:tableName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/getAll/user",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"getAll",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Történelem\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/createCategory",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"createCategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createRole",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/createRole",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"createRole"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createInstitute",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/createInstitute",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"createInstitute"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCategory/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Matematika\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateInstitute/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateInstitute",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateInstitute/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Matematika\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateCategory/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateCategory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateRole/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Matematika\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/updateRole/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"updateRole",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCategory/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteCategory/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteCategory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteInstitute/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteCategory/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteCategory",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteRole/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/deleteRole/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"deleteRole",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

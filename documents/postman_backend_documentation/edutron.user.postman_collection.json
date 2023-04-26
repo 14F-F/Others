@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "9c71c206-9df5-4a41-8bb2-0ffbeb858fc8",
+		"_postman_id": "c99b2284-15d1-4aa7-b080-43ca1e7f804d",
 		"name": "edutron.user",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26267139"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -13,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Name\":\"ének elek\",\r\n    \"Password\":\"bruh\",\r\n    \"Email\":\"fos@fos.fos\"\r\n}",
+					"raw": "{\r\n    \"Name\":\"teszt elek\",\r\n    \"Password\":\"nemigen\",\r\n    \"Email\":\"valami@valami.hu\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -23,7 +22,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/register",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -42,7 +44,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Name\":\"ének Elek\",\r\n    \"Password\":\"bruh2\",\r\n    \"Email\":\"fos@szar.kaki\"\r\n}",
+					"raw": "{\r\n    \"Name\":\"test Elek\",\r\n    \"Password\":\"igen\",\r\n    \"Email\":\"valami@valami.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -52,7 +54,10 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/updateUser/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
@@ -71,15 +76,18 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "45.67.159.35:3000/api/edutron/deleteUser/1",
+					"raw": "45.67.159.35:3000/api/edutron/deleteCategory/1",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
 						"api",
 						"edutron",
-						"deleteUser",
+						"deleteCategory",
 						"1"
 					]
 				}
@@ -93,7 +101,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Name\":\"ének elek\",\r\n    \"Password\":\"bruh\"\r\n}",
+					"raw": "{\r\n    \"Name\":\"teszt elek\",\r\n    \"Password\":\"nemigen\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -103,13 +111,40 @@
 				"url": {
 					"raw": "45.67.159.35:3000/api/edutron/loggedIn",
 					"host": [
-						"45.67.159.35"
+						"45",
+						"67",
+						"159",
+						"35"
 					],
 					"port": "3000",
 					"path": [
 						"api",
 						"edutron",
 						"loggedIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "45.67.159.35:3000/api/edutron/user/1",
+					"host": [
+						"45",
+						"67",
+						"159",
+						"35"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"edutron",
+						"user",
+						"1"
 					]
 				}
 			},

@@ -6,30 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "getAll/:tableName",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "45.67.159.35:3000/api/edutron/getAll/user",
-					"host": [
-						"45",
-						"67",
-						"159",
-						"35"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"edutron",
-						"getAll",
-						"user"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "testByUser/:userId",
 			"request": {
 				"method": "GET",
